@@ -21,17 +21,24 @@
   }
 }
 
-@media screen and(max-height: 620px)and (min-height: 300px)and (min-width: 520px) {
+@media screen and(max-height: 640px)and (min-height: 300px)and (min-width: 520px) {
   footer {
     position: static !important;
     margin-top: 210px;
   }
 }
 
-@media screen and(max-height: 620px)and (min-height: 300px)and (min-width: 1024px) {
+@media screen and(max-height: 640px)and (min-height: 300px)and (min-width: 1024px) {
   footer {
     position: static !important;
     margin-top: 260px !important;
+  }
+}
+
+@media screen and(max-height: 900px)and (min-height: 620px)and (min-width: 1920px) {
+  footer {
+    position: static !important;
+    margin-top: 320px !important;
   }
 }
 
@@ -145,6 +152,7 @@
     }
 
     footer.footer {
+      margin-bottom: 10px;
       height: 160px;
       div.extern_links {
         margin: 0 auto;
@@ -235,6 +243,7 @@
     }
 
     footer.footer {
+      margin-bottom: 40px;
       div.extern_links {
         ul {
           li {
@@ -256,8 +265,6 @@
 }
 
 @media screen and(min-width: 1025px) and (max-width: 1920px) {
-
-
   body {
     .container {
       .col-600 {
@@ -281,6 +288,7 @@
     }
 
     footer.footer {
+      margin-bottom: 40px;
       div.extern_links {
         p {
           font-size: 16pt;
@@ -313,13 +321,21 @@ body:before {
   // height: 100%;
   // opacity: .6;
   // z-index: -1;
-
-}
-
-body {
+  content: "";
   background-image: url("../../images/in_dev_setUp/texture.png");
   background-attachment: fixed;
   background-size: cover;
+  position: absolute;
+  opacity: .6;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
+}
+
+body {
+
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   .container {
@@ -391,6 +407,7 @@ body {
   }
 
   .footer {
+    margin-bottom: 190px;
     position: absolute;
     bottom: 0;
     width: 100%;
